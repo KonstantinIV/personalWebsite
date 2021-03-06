@@ -18,32 +18,50 @@ export default class Example extends React.Component {
     return (
         <div>
           <div className="konst-body-wrapper">
-             <div className="konst-body-shape">
+             <div className="konst-body-shape"></div>
+             <div className="konst-body-shape-background"></div>
+             <div className="konst-body-shape-circle"></div>
 
-            
-            </div>
 
+             <div className="konst-navbar">
+              <div className="konst-navbar-container"> 
+                  <div className="konst-navbar-container-tab konst-navbar-container-tab-mix-blend-mode"> 
+
+                      kK
+                  </div>   
+                  <div className="konst-navbar-container-tab konst-navbar-container-tab-mix-blend-mode"> 
+                      kK
+                  </div> 
+                  <div className="konst-navbar-container-tab"> 
+                      kK
+                  </div> 
+                  <div className="konst-navbar-container-tab"> 
+                      kK
+                  </div> 
+              </div>     
+              <div className="konst-navbar-container-front"> 
+                  <div className="konst-navbar-container-tab-front"> 
+kK
+                  </div>   
+                  <div className="konst-navbar-container-tab-front "> 
+                      kK
+                  </div> 
+                  <div className="konst-navbar-container-tab-front"> 
+                      kK
+                  </div> 
+                  <div className="konst-navbar-container-tab-front"> 
+                      kK
+                  </div> 
+              </div> 
+             
           </div>
           <div className="konst-header">
               Konstantin Maier
           </div>
-
-          <div className="konst-navbar">
-              <div className="konst-navbar-container"> 
-                  <div className="konst-navbar-container-tab"> 
-                      kK
-                  </div>   
-                  <div className="konst-navbar-container-tab"> 
-                      kK
-                  </div> 
-                  <div className="konst-navbar-container-tab"> 
-                      kK
-                  </div> 
-                  <div className="konst-navbar-container-tab"> 
-                      kK
-                  </div> 
-              </div>        
           </div>
+          
+
+ 
 
 
 

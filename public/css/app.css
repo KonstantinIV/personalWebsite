@@ -10004,6 +10004,77 @@ h3 {
     border-color: #dee2e6;
   }
 }
+.konst-navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: absolute;
+}
+
+.konst-navbar-container {
+  width: 80%;
+  padding: 0px 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.konst-navbar-container-background {
+  width: 80%;
+  padding: 0px 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 40px;
+  position: absolute;
+}
+
+.konst-navbar-container-tab {
+  background-color: orange;
+  flex-grow: 1;
+  max-width: 200px;
+  height: 40px;
+  border-radius: 3px;
+  color: #4d4dff;
+  text-align: center;
+  line-height: 40px;
+  margin: 0px 5px;
+  mix-blend-mode: hard-light;
+}
+
+.konst-navbar-container-tab-mix-blend-mode {
+  z-index: 1;
+  mix-blend-mode: hard-light;
+}
+
+.konst-navbar-container-front {
+  width: 80%;
+  padding: 0px 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: absolute;
+}
+
+.konst-navbar-container-tab-front {
+  z-index: 5;
+  width: 100%;
+  max-width: 200px;
+  height: 40px;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 40px;
+  background-color: transparent;
+  margin: 0px 5px;
+}
+
+.konst-navbar-container-tab-front:hover {
+  background-color: #2626da;
+  transition: 0.3s;
+  mix-blend-mode: normal;
+}
+
 .konst-body-wrapper {
   background-color: #3636f9;
   width: 100%;
@@ -10023,32 +10094,48 @@ h3 {
           clip-path: polygon(100% 0%, 100% 60%, 0% 100%, 0% 80%);
 }
 
+.konst-body-shape-background {
+  position: absolute;
+  background-color: #3636f9;
+  -webkit-clip-path: polygon(100% 0%, 100% 0%, 0% 80%, 0% 0%);
+          clip-path: polygon(100% 0%, 100% 0%, 0% 80%, 0% 0%);
+  z-index: 2;
+  mix-blend-mode: color;
+  width: 100%;
+  height: 600px;
+}
+
+.konst-body-shape-orange {
+  background-color: orange;
+  width: 100%;
+  height: 600px;
+  -webkit-clip-path: polygon(100% 0%, 100% 60%, 0% 100%, 0% 80%);
+          clip-path: polygon(100% 0%, 100% 60%, 0% 100%, 0% 80%);
+}
+
+.konst-body-shape-circle {
+  background-color: orange;
+  width: 10px;
+  height: 10px;
+  -webkit-clip-path: circle(50%);
+          clip-path: circle(50%);
+  position: absolute;
+  right: 50px;
+}
+
 .konst-header {
   width: 100%;
   height: 300px;
   text-align: center;
   font-size: 80px;
-  line-height: 300px;
-  mix-blend-mode: difference;
-  color: #5c5cd8;
+  line-height: 120px;
+  mix-blend-mode: hard-light;
+  color: orange;
+  z-index: 1;
+  position: absolute;
 }
 
-.konst-navbar {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.konst-navbar-container {
-  width: 80%;
-  padding: 0px 40px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.konst-navbar-container-tab {
+.konst-navbar-container-tab-background {
   background-color: #1b1b7b;
   flex-grow: 1;
   max-width: 200px;
@@ -10058,11 +10145,48 @@ h3 {
   text-align: center;
   line-height: 40px;
   margin: 0px 5px;
-  mix-blend-mode: difference;
+  background-color: orange;
 }
 
-.konst-navbar-container-tab:hover {
-  background-color: #2626da;
-  transition: 0.3s;
-  mix-blend-mode: normal;
+.konst-navbar-container-tab-background-cut {
+  background-color: #1b1b7b;
+  flex-grow: 1;
+  max-width: 200px;
+  height: 40px;
+  border-radius: 3px;
+  color: #4d4dff;
+  text-align: center;
+  line-height: 40px;
+  margin: 0px 5px;
+  background-color: orange;
+  -webkit-clip-path: polygon(100% 9%, 100% 100%, 56% 100%, 65% 80%);
+          clip-path: polygon(100% 9%, 100% 100%, 56% 100%, 65% 80%);
+}
+
+.konst-navbar-container-tab-background-cut-child {
+  width: 100%;
+  height: 40px;
+  -webkit-clip-path: polygon(100% 9%, 100% 100%, 56% 100%, 65% 80%);
+          clip-path: polygon(100% 9%, 100% 100%, 56% 100%, 65% 80%);
+  background-color: orange;
+  position: absolute;
+}
+
+.konst-navbar-container-tab-background-tp {
+  flex-grow: 1;
+  max-width: 200px;
+  height: 40px;
+  border-radius: 3px;
+  color: #4d4dff;
+  text-align: center;
+  line-height: 40px;
+  margin: 0px 5px;
+  background-color: transparent;
+}
+
+.konst-navbar-container-tab-background .testing {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  background-color: yellow;
 }
