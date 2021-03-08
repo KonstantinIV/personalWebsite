@@ -1,17 +1,20 @@
 body{
     //background-color: #3636f9;
     //background-color: #70f936;
-
+    height: fit-content;
+    background-color: #3636f9;
 }
 
 @import 'konst_navbar';
+@import 'konst_orange_bird';
+@import 'konst_content';
 
 .konst-body-wrapper{
     background-color: #3636f9;
     width: 100%;
     height: 100%;
     position: absolute;
-    z-index: -1;
+    z-index: 0;
     display: flex;
     flex-flow: column-reverse;
     justify-content: center;
