@@ -10011,6 +10011,36 @@ body {
   background-color: #3636f9;
 }
 
+.konst-body-blue-wrapper {
+  background-color: #3636f9;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+  display: flex;
+  flex-flow: column-reverse;
+  justify-content: center;
+}
+
+.konst-body-blue-shape {
+  background-color: #1e1e4c;
+  width: 100%;
+  height: 600px;
+  -webkit-clip-path: polygon(100% 0%, 100% 60%, 0% 100%, 0% 80%);
+          clip-path: polygon(100% 0%, 100% 60%, 0% 100%, 0% 80%);
+}
+
+.konst-body-shape-blue-background {
+  position: absolute;
+  background-color: #3636f9;
+  -webkit-clip-path: polygon(100% 0%, 100% 0%, 0% 80%, 0% 0%);
+          clip-path: polygon(100% 0%, 100% 0%, 0% 80%, 0% 0%);
+  z-index: 2;
+  mix-blend-mode: color;
+  width: 100%;
+  height: 600px;
+}
+
 .konst-navbar {
   width: 100%;
   display: flex;
@@ -10074,6 +10104,7 @@ body {
   line-height: 40px;
   background-color: transparent;
   margin: 0px 5px;
+  box-shadow: 6px 6px 12px #00003f;
 }
 
 .konst-navbar-container-tab-front:hover {
@@ -10094,6 +10125,7 @@ body {
   right: 78%;
   top: 234px;
   z-index: 6;
+  pointer-events: none;
 }
 
 .konst-header-space {
@@ -10120,54 +10152,7 @@ body {
   height: 200px;
   border-radius: 5px;
   margin-top: 50px;
-}
-
-.konst-body-wrapper {
-  background-color: #3636f9;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: 0;
-  display: flex;
-  flex-flow: column-reverse;
-  justify-content: center;
-}
-
-.konst-body-shape {
-  background-color: #1e1e4c;
-  width: 100%;
-  height: 600px;
-  -webkit-clip-path: polygon(100% 0%, 100% 60%, 0% 100%, 0% 80%);
-          clip-path: polygon(100% 0%, 100% 60%, 0% 100%, 0% 80%);
-}
-
-.konst-body-shape-background {
-  position: absolute;
-  background-color: #3636f9;
-  -webkit-clip-path: polygon(100% 0%, 100% 0%, 0% 80%, 0% 0%);
-          clip-path: polygon(100% 0%, 100% 0%, 0% 80%, 0% 0%);
-  z-index: 2;
-  mix-blend-mode: color;
-  width: 100%;
-  height: 600px;
-}
-
-.konst-body-shape-orange {
-  background-color: orange;
-  width: 100%;
-  height: 600px;
-  -webkit-clip-path: polygon(100% 0%, 100% 60%, 0% 100%, 0% 80%);
-          clip-path: polygon(100% 0%, 100% 60%, 0% 100%, 0% 80%);
-}
-
-.konst-body-shape-circle {
-  background-color: orange;
-  width: 10px;
-  height: 10px;
-  -webkit-clip-path: circle(50%);
-          clip-path: circle(50%);
-  position: absolute;
-  right: 50px;
+  box-shadow: 2px 2px 10px #000000;
 }
 
 .konst-header {
@@ -10180,60 +10165,4 @@ body {
   color: orange;
   z-index: 1;
   position: absolute;
-}
-
-.konst-navbar-container-tab-background {
-  background-color: #1b1b7b;
-  flex-grow: 1;
-  max-width: 200px;
-  height: 40px;
-  border-radius: 3px;
-  color: #4d4dff;
-  text-align: center;
-  line-height: 40px;
-  margin: 0px 5px;
-  background-color: orange;
-}
-
-.konst-navbar-container-tab-background-cut {
-  background-color: #1b1b7b;
-  flex-grow: 1;
-  max-width: 200px;
-  height: 40px;
-  border-radius: 3px;
-  color: #4d4dff;
-  text-align: center;
-  line-height: 40px;
-  margin: 0px 5px;
-  background-color: orange;
-  -webkit-clip-path: polygon(100% 9%, 100% 100%, 56% 100%, 65% 80%);
-          clip-path: polygon(100% 9%, 100% 100%, 56% 100%, 65% 80%);
-}
-
-.konst-navbar-container-tab-background-cut-child {
-  width: 100%;
-  height: 40px;
-  -webkit-clip-path: polygon(100% 9%, 100% 100%, 56% 100%, 65% 80%);
-          clip-path: polygon(100% 9%, 100% 100%, 56% 100%, 65% 80%);
-  background-color: orange;
-  position: absolute;
-}
-
-.konst-navbar-container-tab-background-tp {
-  flex-grow: 1;
-  max-width: 200px;
-  height: 40px;
-  border-radius: 3px;
-  color: #4d4dff;
-  text-align: center;
-  line-height: 40px;
-  margin: 0px 5px;
-  background-color: transparent;
-}
-
-.konst-navbar-container-tab-background .testing {
-  position: absolute;
-  width: inherit;
-  height: inherit;
-  background-color: yellow;
 }

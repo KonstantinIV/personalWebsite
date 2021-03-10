@@ -16,3 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('custom/welcome');
 });
+
+
+Route::get('/{route?}',function(){
+    return view('custom/welcome');
+});
+/*oute::view('/{path?}', 'custom/welcome')
+     ->where('path', '.*')
+     ->name('react');*/

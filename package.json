@@ -27,6 +27,7 @@
     "dependencies": {
         "@babel/cli": "^7.13.0",
         "@babel/plugin-syntax-jsx": "^7.12.13",
-        "babel": "^6.23.0"
+        "babel": "^6.23.0",
+        "react-router-dom": "^5.2.0"
     }
 }

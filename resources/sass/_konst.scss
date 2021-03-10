@@ -4,55 +4,15 @@ body{
     height: fit-content;
     background-color: #3636f9;
 }
-
+@import 'konst_blueTheme';
 @import 'konst_navbar';
 @import 'konst_orange_bird';
 @import 'konst_content';
 
-.konst-body-wrapper{
-    background-color: #3636f9;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 0;
-    display: flex;
-    flex-flow: column-reverse;
-    justify-content: center;
-}
-.konst-body-shape{
-    background-color: #1e1e4c;
-    width: 100%;
-    height: 600px;
-    clip-path: polygon(100% 0%, 100% 60%, 0% 100%, 0% 80%);
 
-}
-.konst-body-shape-background{
-    position: absolute;
-    background-color: #3636f9;
-    clip-path: polygon(100% 0%, 100% 0%, 0% 80%, 0% 0%);
-    z-index: 2;
-    mix-blend-mode: color;
-    
-    width: 100%;
-    height: 600px;
-}
-.konst-body-shape-orange{
-    background-color: orange;
-    width: 100%;
-    height: 600px;
-    clip-path: polygon(100% 0%, 100% 60%, 0% 100%, 0% 80%);
 
-}
 
-.konst-body-shape-circle{
-    background-color: orange;
-    width: 10px;
-    height: 10px;
-    clip-path: circle(50%);
-    position: absolute;
-    right: 50px;
 
-}
 .konst-header{
     width: 100%;
     height: 300px;
@@ -68,76 +28,6 @@ body{
 
 
 
-.konst-navbar-container-tab-background{
-    background-color: #1b1b7b;
-     // background-color: #2a2a9e;
-   //  width: 30%;
-   flex-grow: 1;
-     max-width: 200px;
-     height: 40px;
-     border-radius: 3px;
-     color: #4d4dff;
-     text-align: center;
-     line-height: 40px;
-     margin: 0px 5px;
-     //mix-blend-mode: difference;
-     background-color: orange;
-
- }
- .konst-navbar-container-tab-background-cut{
-    background-color: #1b1b7b;
-     // background-color: #2a2a9e;
-   //  width: 30%;
-   flex-grow: 1;
-     max-width: 200px;
-     height: 40px;
-     border-radius: 3px;
-     color: #4d4dff;
-     text-align: center;
-     line-height: 40px;
-     margin: 0px 5px;
-     //mix-blend-mode: overlay;
-     background-color: orange;
-     clip-path: polygon(100% 9%, 100% 100%, 56% 100%, 65% 80%);
-
- }
- .konst-navbar-container-tab-background-cut-child{
-     width: 100%;
-     height: 40px;
-    clip-path: polygon(100% 9%, 100% 100%, 56% 100%, 65% 80%);
-    background-color: orange;
-    position: absolute;
- }
- .konst-navbar-container-tab-background-tp{
-    //background-color: #1b1b7b;
-     // background-color: #2a2a9e;
-   //  width: 30%;
-   flex-grow: 1;
-     max-width: 200px;
-     height: 40px;
-     border-radius: 3px;
-     color: #4d4dff;
-     text-align: center;
-     line-height: 40px;
-     margin: 0px 5px;
-     //mix-blend-mode: difference;
-     background-color: transparent;
-     
- }
 
 
 
-
-
-
-
-
-
-
-.konst-navbar-container-tab-background .testing{
-position: absolute;
-width: inherit;
-height: inherit;
-background-color: yellow;
-
-}
