@@ -32,24 +32,7 @@ export default class Example extends React.Component {
 
                     {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
-                    <Switch>
-                        <Route  path="/" render={(props) => (
-                            <div key="1" className="konst-body-blue-wrapper">
-                                <div className="konst-body-blue-shape"></div>
-                                <div className="konst-body-shape-blue-background"></div>
-                                <img className="konst-orange-bird" src="images/birdoranges.svg" alt="bird" />
-                                <img className="konst-orange-bird konst-orange-bird-smooth" src="images/smoothbird.svg" alt="bird" />
-
-                                <NavigationBar />
-                                <Header />
-                                <FirstContent />
-
-                            </div>
-                        )}>
-
-                        </Route>
-
-                    </Switch>
+                   
                     <Switch>
                         <Route  path="/first" render={(props) => (
                             <div key="2" className="konst-body-blue-wrapper">
@@ -58,8 +41,8 @@ export default class Example extends React.Component {
                                 <img className="konst-orange-bird" src="images/birdoranges.svg" alt="bird" />
                                 <img className="konst-orange-bird konst-orange-bird-smooth" src="images/smoothbird.svg" alt="bird" />
 
-                                <NavigationBar />
-                                <Header />
+                                <NavigationBar theme="blue"/>
+                                <Header theme="blue"/>
                                 <FirstContent />
 
                             </div>
@@ -75,8 +58,8 @@ export default class Example extends React.Component {
                                 <img className="konst-orange-bird" src="images/birdoranges.svg" alt="bird" />
                                 <img className="konst-orange-bird konst-orange-bird-smooth" src="images/smoothbird.svg" alt="bird" />
 
-                                <NavigationBar />
-                                <Header />
+                                <NavigationBar theme="green"/>
+                                <Header theme="green"/>
                                 <FirstContent />
 
                             </div>

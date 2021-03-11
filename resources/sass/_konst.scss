@@ -4,7 +4,9 @@ body{
     height: fit-content;
     background-color: #3636f9;
 }
-@import 'konst_blueTheme';
+@import 'blueTheme/importBlueTheme';
+@import 'greenTheme/importGreenTheme';
+
 @import 'konst_navbar';
 @import 'konst_orange_bird';
 @import 'konst_content';
@@ -20,11 +22,9 @@ body{
     font-size: 80px;
     line-height: 120px;
     mix-blend-mode: hard-light;
-    color: orange;
     z-index: 1;
     position: absolute;
 }
-
 
 
 

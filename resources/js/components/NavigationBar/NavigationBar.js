@@ -9,10 +9,18 @@ export default class NavigationBar extends React.Component {
  
 
     this.state = {
-      
+      theme : this.props.theme
     };
   
 
+  }
+  getThemeClassName(){
+    let themeName = this.state.theme;
+    return "konst-navbar-container-tab-" + themeName;
+  }
+  getThemeClassNameFront(){
+    let themeName = this.state.theme;
+    return "konst-navbar-container-tab-front-" + themeName;
   }
 
   render() {
@@ -21,33 +29,69 @@ export default class NavigationBar extends React.Component {
      <div className="konst-navbar">
                 
               <div className="konst-navbar-container"> 
-                  <div className="konst-navbar-container-tab konst-navbar-container-tab-mix-blend-mode">       
+                  <div 
+                  className={
+                  "konst-navbar-container-tab " +
+                  this.getThemeClassName() +
+                  " konst-navbar-container-tab-mix-blend-mode"
+                  
+                  }>       
             
                   </div>   
-                  <div className="konst-navbar-container-tab konst-navbar-container-tab-mix-blend-mode"> 
+                  <div 
+                  className={
+                    "konst-navbar-container-tab " +
+                    this.getThemeClassName() +
+                    " konst-navbar-container-tab-mix-blend-mode"
+                    
+                    }> 
                       
                   </div> 
-                  <div className="konst-navbar-container-tab"> 
+                  <div className={
+                  "konst-navbar-container-tab " +
+                  this.getThemeClassName()
+                  
+                  }> 
                       
                   </div> 
-                  <div className="konst-navbar-container-tab"> 
+                  <div className={
+                  "konst-navbar-container-tab " +
+                  this.getThemeClassName()
+                  
+                  }> 
                       
                   </div> 
               </div>     
               <div className="konst-navbar-container-front"> 
-                  <div className="konst-navbar-container-tab-front">
-                  <Link to="/second">First</Link>
+                  <div className={
+                  "konst-navbar-container-tab-front " +
+                  this.getThemeClassNameFront()
+                  
+                  }>
+                  <Link to="/first">First</Link>
 
                   </div>   
-                  <div className="konst-navbar-container-tab-front "> 
+                  <div className={
+                  "konst-navbar-container-tab-front " +
+                  this.getThemeClassNameFront()
+                  
+                  }> 
                   <Link to="/second">Second</Link>
 
                   </div> 
-                  <div className="konst-navbar-container-tab-front"> 
+                  <div className={
+                  "konst-navbar-container-tab-front " +
+                  this.getThemeClassNameFront()
+                  
+                  }> 
                   <Link to="/second">Second</Link>
 
                   </div> 
-                  <div className="konst-navbar-container-tab-front"> 
+                  <div className={
+                  "konst-navbar-container-tab-front " +
+                  this.getThemeClassNameFront()
+                  
+                  }> 
                   <Link to="/second">Second</Link>
 
                   </div> 
