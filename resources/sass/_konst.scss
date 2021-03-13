@@ -3,9 +3,11 @@ body{
     //background-color: #70f936;
     height: fit-content;
     background-color: #3636f9;
+    overflow-x: hidden;
 }
 @import 'blueTheme/importBlueTheme';
 @import 'greenTheme/importGreenTheme';
+@import 'purpleTheme/importPurpleTheme';
 
 @import 'konst_navbar';
 @import 'konst_orange_bird';

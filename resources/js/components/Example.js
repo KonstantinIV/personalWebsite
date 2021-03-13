@@ -52,6 +52,7 @@ export default class Example extends React.Component {
                     </Switch>
                     <Switch>
                         <Route  path="/second" render={(props) => (
+                            
                             <div key="3" className="konst-body-green-wrapper">
                                 <div className="konst-body-green-shape"></div>
                                 <div className="konst-body-green-shape-background"></div>
@@ -63,6 +64,29 @@ export default class Example extends React.Component {
                                 <FirstContent />
 
                             </div>
+                            
+                        )}>
+
+                        </Route>
+                    </Switch>
+                    <Switch>
+                        <Route  path="/third" render={(props) => (
+                            
+                            <div key="4" className="konst-body-purple-wrapper">
+                                <div className="konst-body-purple-shape"></div>
+                                <div className="konst-purple-container">
+                                <div className="konst-body-purple-shape-background"></div>
+                                <div className="konst-body-purple-shape-background-2"></div>
+                                </div> 
+                                <img className="konst-orange-bird" src="images/birdoranges.svg" alt="bird" />
+                                <img className="konst-orange-bird konst-orange-bird-smooth" src="images/smoothbird.svg" alt="bird" />
+
+                                <NavigationBar theme="purple"/>
+                                <Header theme="purple"/>
+                                <FirstContent />
+
+                            </div>
+                            
                         )}>
 
                         </Route>

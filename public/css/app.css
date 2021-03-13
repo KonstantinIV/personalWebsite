@@ -10009,6 +10009,7 @@ body {
   height: -moz-fit-content;
   height: fit-content;
   background-color: #3636f9;
+  overflow-x: hidden;
 }
 
 .konst-header-blue {
@@ -10059,11 +10060,11 @@ body {
 }
 
 .konst-header-green {
-  color: #ff0063;
+  color: #f90765;
 }
 
 .konst-navbar-container-tab-green {
-  background-color: #ff0063;
+  background-color: #f90765;
   color: #4d4dff;
 }
 
@@ -10100,6 +10101,72 @@ body {
   mix-blend-mode: color;
   width: 100%;
   height: 600px;
+}
+
+.konst-header-purple {
+  color: orange;
+}
+
+.konst-navbar-container-tab-purple {
+  background-color: #d300ff;
+  color: #4d4dff;
+}
+
+.konst-navbar-container-tab-front-purple:hover {
+  background-color: #560867;
+}
+
+.konst-body-purple-wrapper {
+  background-color: #69007f;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+  display: flex;
+  flex-flow: column-reverse;
+  justify-content: center;
+}
+
+.konst-body-purple-shape {
+  background-color: #27032e;
+  height: 600px;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  right: 0px;
+  position: absolute;
+  right: -97px;
+}
+
+.konst-body-purple-shape-background {
+  background-color: #69007f;
+  z-index: 2;
+  mix-blend-mode: color;
+  width: 80%;
+  height: 400px;
+  right: 510px;
+  position: absolute;
+}
+
+.konst-body-purple-shape-background-2 {
+  border-radius: 50%;
+  box-shadow: -80px -90px 0px -11px #69007f;
+  right: 0px;
+  z-index: 2;
+  mix-blend-mode: color;
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  right: -97px;
+}
+
+.konst-purple-container {
+  display: flex;
+  flex-flow: row;
+  position: absolute;
+  width: 100%;
+  height: 600px;
+  justify-content: flex-end;
 }
 
 .konst-navbar {

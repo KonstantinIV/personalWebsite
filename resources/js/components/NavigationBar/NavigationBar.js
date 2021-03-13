@@ -7,12 +7,25 @@ export default class NavigationBar extends React.Component {
   constructor(props) {
     super(props);
  
-
+    
     this.state = {
       theme : this.props.theme
     };
-  
 
+  }
+
+  changeBodyBackground(){
+    let theme = this.state.theme;
+    if(theme === "blue"){
+      document.body.style.backgroundColor = "#3636f9";
+
+    }else if(theme === "green"){
+      document.body.style.backgroundColor = "#57bd2c";
+
+    }else if(theme === "purple"){
+      document.body.style.backgroundColor = "#69007f";
+
+    }
   }
   getThemeClassName(){
     let themeName = this.state.theme;
@@ -24,6 +37,8 @@ export default class NavigationBar extends React.Component {
   }
 
   render() {
+    this.changeBodyBackground();
+
     return (
         
      <div className="konst-navbar">
@@ -84,7 +99,7 @@ export default class NavigationBar extends React.Component {
                   this.getThemeClassNameFront()
                   
                   }> 
-                  <Link to="/second">Second</Link>
+                  <Link to="/third">Third</Link>
 
                   </div> 
                   <div className={
@@ -92,7 +107,7 @@ export default class NavigationBar extends React.Component {
                   this.getThemeClassNameFront()
                   
                   }> 
-                  <Link to="/second">Second</Link>
+                  <Link to="/Fourth">Fourth</Link>
 
                   </div> 
               </div> 
