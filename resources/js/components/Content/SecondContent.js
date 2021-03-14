@@ -1,6 +1,6 @@
 import React from 'react';
-
-
+import Gallery from '../Gallery/Gallery'
+import PropTypes from 'prop-types';
 
 export default class SecondContent extends React.Component {
   constructor(props) {
@@ -8,25 +8,25 @@ export default class SecondContent extends React.Component {
 
 
     this.state = {
-
+      images: this.props.images
     };
 
 
   }
+  
 
   render() {
+    
     return (
 
       <div className="konst-content">
         <div className="konst-content-container">
-          
-          <div className="konst-content-container-post-container">
-lll
-          </div>
+                <Gallery />
+         
+
         </div>
       </div>
 
     );
   }
 }
-

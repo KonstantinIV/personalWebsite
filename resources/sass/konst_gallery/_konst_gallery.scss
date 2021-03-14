@@ -1,0 +1,23 @@
+.konst-gallery{
+    display:flex;
+    flex-flow:row;
+    width:85%;
+    background-color:#173a1b;
+border-radius: 5px;
+min-height:300px;
+
+   // align-items:baseline;
+}
+
+
+.konst-gallery-image{
+    margin: 10px;
+    //width:100px;
+    padding:3px;
+    height:fit-content;
+}
+.konst-gallery-image img{
+        background-color: #addd99;
+
+    width:100px;
+}

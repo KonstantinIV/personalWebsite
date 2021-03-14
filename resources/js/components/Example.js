@@ -3,8 +3,7 @@ import ReactDOM from 'react-dom';
 
 
 import { BrowserRouter as Router } from 'react-router-dom';
-import Switch from 'react-router-dom/Switch';
-import Route from 'react-router-dom/Route';
+import {Route,Switch} from 'react-router-dom';
 
 import NavigationBar from './NavigationBar/NavigationBar';
 import Header from './Header/Header';
