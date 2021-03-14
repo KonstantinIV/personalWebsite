@@ -9,6 +9,8 @@ import Route from 'react-router-dom/Route';
 import NavigationBar from './NavigationBar/NavigationBar';
 import Header from './Header/Header';
 import FirstContent from './Content/FirstContent';
+import SecondContent from './Content/SecondContent';
+import ThirdContent from './Content/ThirdContent';
 
 
 export default class Example extends React.Component {
@@ -61,7 +63,7 @@ export default class Example extends React.Component {
 
                                 <NavigationBar theme="green"/>
                                 <Header theme="green"/>
-                                <FirstContent />
+                                <SecondContent />
 
                             </div>
                             
@@ -83,7 +85,7 @@ export default class Example extends React.Component {
 
                                 <NavigationBar theme="purple"/>
                                 <Header theme="purple"/>
-                                <FirstContent />
+                                <ThirdContent />
 
                             </div>
                             
