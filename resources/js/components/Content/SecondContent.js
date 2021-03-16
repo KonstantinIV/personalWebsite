@@ -1,6 +1,5 @@
 import React from 'react';
 import Gallery from '../Gallery/Gallery'
-import PropTypes from 'prop-types';
 
 export default class SecondContent extends React.Component {
   constructor(props) {

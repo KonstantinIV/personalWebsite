@@ -62,6 +62,7 @@
          margin: 0px 5px;
          mix-blend-mode: hard-light;
      }
+     
     .konst-navbar-container-tab-front{
         z-index: 5;
          width: 100%;
@@ -72,11 +73,18 @@
         line-height: 40px;
         background-color:transparent;
         margin: 0px 5px;
+        font-size: 18px;
+    font-family: 'Nunito';
+    
        // box-shadow: 6px 6px 12px #00003f;
     }
+    .konst-navbar-container-tab-front a:hover{
+        text-decoration: none;
+       }
     .konst-navbar-container-tab-front:hover{
        // background-color: #2626da;
         transition: 0.3s;
         mix-blend-mode: normal;
+        cursor: pointer;
     }
  

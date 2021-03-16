@@ -14,31 +14,43 @@
 .konst-content-container-post-container{
     background-color: #272781;
     width: 60%;
-    height: 200px;
+    max-width: 660px;
+    height: fit-content;
     border-radius: 5px;
     
     margin-top: 50px;
-    padding: 30px 20px 10px 30px;
+    padding: 20px 0px 10px 0px; 
 
 
-    box-shadow: 2px 2px 10px #000000;
+    box-shadow: 2px 2px 10px #000000; 
     
     display:flex;
     flex-flow: row;
-    
+    flex-wrap: wrap;
+    justify-content: center;
 
 }
-
+.konst-profile-picture-container{
+    height: 50%; 
+    width: 50%;
+}
 .konst-profile-picture{
- height: 80%;
- width: 90%;
+  //  width: 150px;
+  height: 150px;
  border-radius: 50%;
-
+ max-width: 150px;
+ min-width: 50px;
 
 
 }
 .konst-profile-text{
     height: 100px;
     color: #e0ffff;
-    margin-left: 30px;   
+    margin-left: 20px;
+    margin-right: 20px;   
+    height: fit-content;
+    min-width: 220px;
+    padding-top: 10px;
+    max-width: 430px;
+    width: 70%;
    }

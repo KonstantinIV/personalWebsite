@@ -15,12 +15,14 @@ export default class FirstContent extends React.Component {
   }
 
   render() {
+    let imgStyle= {width:'50% ', height:'50%'};
     return (
 
       <div className="konst-content">
         <div className="konst-content-container">
           <div className="konst-content-container-post-container">
-            <img className="konst-profile-picture" src="images/profile.png" alt="profile"/>
+              <img className="konst-profile-picture" src="images/profile.png"  alt="profile"/>
+            
                 
             
             <div className="konst-profile-text">

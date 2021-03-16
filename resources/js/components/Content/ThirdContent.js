@@ -1,4 +1,5 @@
 import React from 'react';
+import GalleryVideo from '../GalleryVideo/GalleryVideo';
 
 
 
@@ -20,9 +21,8 @@ export default class ThirdContent extends React.Component {
       <div className="konst-content">
         <div className="konst-content-container">
           
-          <div className="konst-content-container-post-container">
+        <GalleryVideo />
 
-          </div>
         </div>
       </div>
 

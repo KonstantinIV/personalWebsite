@@ -3,12 +3,23 @@
 
 .konst-navbar-container-tab-blue{
     background-color: orange;
-     color: #4d4dff;
+    
      
  }
 .konst-navbar-container-tab-front-blue{
-    box-shadow: 6px 6px 12px #00003f;
+    //box-shadow: 6px 6px 12px #00003f;
+    color: #3022a3;
 }
+
 .konst-navbar-container-tab-front-blue:hover{
     background-color: #2626da;
+    color: #566ed9;
+
 }
+
+.konst-navbar-container-tab-front-blue a:hover{
+    // background-color: #2626da;
+     transition: 0.3s;
+     color: #566ed9;
+
+ }

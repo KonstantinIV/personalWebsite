@@ -53,6 +53,9 @@ return imagefiles;
           <Image key={key} image={element.default} alt={key} onClick={() =>this.openImageViewer(element.default,key)}/>   
 ))}
 <div className="konst-gallery-image-placeholder"><div></div></div>
+<div className="konst-gallery-image-placeholder"><div></div></div>
+<div className="konst-gallery-image-placeholder"><div></div></div>
+<div className="konst-gallery-image-placeholder"><div></div></div>
 {this.state.isImageClicked ? 
 <ImageViewer 
   imageFilename={this.state.imageFilename} 
@@ -79,9 +82,11 @@ class Image extends React.Component {
   render() {
     
     return (
-
+<div className="konst-gallery-image-container">
       <div className="konst-gallery-image">
+
             <img src={this.state.image} alt={this.props.alt} onClick={this.props.onClick}/>
+      </div>
       </div>
 
     );
@@ -106,6 +111,7 @@ class ImageViewer extends React.Component {
     return (
 
       <div className="konst-gallery-imageViewer" onClick={this.props.onClick}>
+      
             <img src={this.state.imageFilename} alt={this.props.alt}/>
       </div>
 

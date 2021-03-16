@@ -3,12 +3,21 @@
 
 .konst-navbar-container-tab-green{
     background-color: #f90765;
-     color: #4d4dff;
      
  }
 .konst-navbar-container-tab-front-green{
     //box-shadow: 6px 6px 12px #003f0d;
+    color: #ff874d;
+    
+
 }
 .konst-navbar-container-tab-front-green:hover{
     background-color: #3eda26;
+    color: #2a3315;
 }
+.konst-navbar-container-tab-front-green a:hover{
+    // background-color: #2626da;
+     
+     color: #2a3315;
+
+ }
