@@ -21,7 +21,7 @@ export default class GalleryVideo extends React.Component {
     }
   getvideoFileNames(){
 
-let videofiles = this.importAll(require.context('../../../../public/galleryVideos/',  false));  
+let videofiles = this.importAll(require.context('../../../../public/images/galleryVideos/',  false));   
 console.log(videofiles);
 return videofiles;
   }
