@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
@@ -21,10 +22,14 @@
         </style>
     </head>
     <body class="antialiased">
-
+    <script>
+            
+            let myData = '{{!! json_encode($name) ?? "hi" !!}}';
+                    </script>
     <div id="example">
     
     </div> 
+   
        </body>
        <script type="text/javascript" src="js/app.js"></script>
       

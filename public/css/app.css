@@ -10220,14 +10220,14 @@ body {
   z-index: 2;
   mix-blend-mode: color;
   width: 80%;
-  height: 400px;
+  height: 350px;
   right: 510px;
   position: absolute;
 }
 
 .konst-body-purple-shape-background-2 {
   border-radius: 50%;
-  box-shadow: -80px -90px 0px -11px #69007f;
+  box-shadow: -80px -120px 0px -11px #69007f;
   right: 0px;
   z-index: 2;
   mix-blend-mode: color;
@@ -10309,6 +10309,12 @@ body {
   margin: 0px 5px;
   font-size: 18px;
   font-family: "Nunito";
+}
+
+.konst-navbar-container-tab-front a {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
 }
 
 .konst-navbar-container-tab-front a:hover {
@@ -10423,7 +10429,7 @@ body {
   display: flex;
   flex-flow: wrap;
   width: 85%;
-  background-color: #173a1b;
+  background-color: #25112c;
   border-radius: 5px;
   min-height: 300px;
   justify-content: space-around;

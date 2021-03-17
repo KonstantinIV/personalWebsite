@@ -29,6 +29,7 @@
         "@babel/plugin-syntax-jsx": "^7.12.13",
         "babel": "^6.23.0",
         "react-grid-gallery": "^0.5.5",
+        "react-player": "^2.9.0",
         "react-router-dom": "^5.2.0"
     }
 }

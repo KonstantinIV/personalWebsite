@@ -1,5 +1,5 @@
 import React from 'react';
-
+import ReactPlayer from 'react-player'
 export default class GalleryVideo extends React.Component {
   constructor(props) {
     super(props);
@@ -21,9 +21,9 @@ export default class GalleryVideo extends React.Component {
     }
   getvideoFileNames(){
 
-let videofiles = this.importAll(require.context('../../../../public/images/galleryVideos/',  false));   
+/*let videofiles = this.importAll(require.context('../../../../public/images/galleryVideos/',  false));   
 console.log(videofiles);
-return videofiles;
+return videofiles;*/
   }
 
   openvideoViewer(videoFilename,altInfo){ 
@@ -50,9 +50,11 @@ return videofiles;
     return (
 
       <div className="konst-gallery-video">
-      { this.getvideoFileNames().map((element,key) => (
+      {/* this.getvideoFileNames().map((element,key) => (
           <Video key={key} video={element.default} alt={key} onClick={() =>this.openvideoViewer(element.default,key)}/>   
-))}
+      ))*/}
+          <Video key="1"  onClick={() =>this.openvideoViewer(element.default,key)}/>   
+
 <div className="konst-gallery-video-placeholder"><div></div></div>
 <div className="konst-gallery-video-placeholder"><div></div></div> 
 <div className="konst-gallery-video-placeholder"><div></div></div>
@@ -86,8 +88,16 @@ class Video extends React.Component {
 <div className="konst-gallery-video-container">
       <div className="konst-gallery-video">
 
-            <img src={this.state.video} alt={this.props.alt} onClick={this.props.onClick}/>
-      </div>
+      <ReactPlayer
+            
+            url= 'galleryVideos/test.mp4'
+            width='100%'
+            height='100%'
+            controls = {true}
+
+            />     
+            
+             </div>
       </div>
 
     );
