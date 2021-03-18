@@ -37,7 +37,6 @@ export default class NavigationBar extends React.Component {
   }
 
   render() {
-    console.log(myData);
     this.changeBodyBackground();
 
     return (

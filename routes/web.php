@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ImageGallery;
+use App\Http\Controllers\VideoGallery;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,8 +23,15 @@ Route::get('/{route?}',function(){
 });
 */
 
+Route::get('/imageGallery',[ImageGallery::class, 'getImageFilenames']); 
+Route::get('/videoGallery',[VideoGallery::class, 'getVideoFilenames']); 
 
-Route::get('/{route?}',[ImageGallery::class, 'show']); 
+
+//Route::get('/second',[ImageGallery::class, 'getImageFilenames']); 
+//Route::get('/third',[VideoGallery::class, 'getVideoFilenames']); 
+Route::get('/{route?}',function(){
+    return view('custom/welcome');
+});
 /*oute::view('/{path?}', 'custom/welcome')
      ->where('path', '.*')
      ->name('react');*/

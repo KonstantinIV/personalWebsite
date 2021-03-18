@@ -24,7 +24,6 @@
     <body class="antialiased">
     <script>
             
-            let myData = '{{!! json_encode($name) ?? "hi" !!}}';
                     </script>
     <div id="example">
     

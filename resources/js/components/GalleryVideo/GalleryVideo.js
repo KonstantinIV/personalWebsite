@@ -9,23 +9,15 @@ export default class GalleryVideo extends React.Component {
       videos: this.props.videos,
       isvideoClicked : false,
       videoFilename : "",
-      altInfo : "" 
+      altInfo : "" ,
+      videoFilenames: []
     };
 
     this.openvideoViewer = this.openvideoViewer.bind(this);
     this.closevideoViewer = this.closevideoViewer.bind(this);
 
   }
-    importAll(r) {
-        return r.keys().map(r);
-    }
-  getvideoFileNames(){
-
-/*let videofiles = this.importAll(require.context('../../../../public/images/galleryVideos/',  false));   
-console.log(videofiles);
-return videofiles;*/
-  }
-
+    
   openvideoViewer(videoFilename,altInfo){ 
     console.log(videoFilename);
      this.setState({
@@ -44,16 +36,34 @@ return videofiles;*/
           
         })
   } 
+  componentDidMount() {
+    var request = new XMLHttpRequest();
+  
+    request.open("GET","/videoGallery", true);
+    request.setRequestHeader(
+      "Content-Type",
+      "application/x-www-form-urlencoded; charset=UTF-8"
+    );
+    request.send();
+    request.onreadystatechange = function() {
+      if (request.readyState === XMLHttpRequest.DONE) {
+        console.log(request.response);
+        this.setState({
+          videoFilenames: JSON.parse(request.response)
+        })
+       
+      }
+    }.bind(this);
 
+  }
   render() {
      
     return (
 
       <div className="konst-gallery-video">
-      {/* this.getvideoFileNames().map((element,key) => (
-          <Video key={key} video={element.default} alt={key} onClick={() =>this.openvideoViewer(element.default,key)}/>   
-      ))*/}
-          <Video key="1"  onClick={() =>this.openvideoViewer(element.default,key)}/>   
+      { this.state.videoFilenames.map((element,key) => (
+          <Video key={key} video={element} alt={key} onClick={() =>this.openvideoViewer(element,key)}/>   
+      ))}
 
 <div className="konst-gallery-video-placeholder"><div></div></div>
 <div className="konst-gallery-video-placeholder"><div></div></div> 
@@ -90,7 +100,7 @@ class Video extends React.Component {
 
       <ReactPlayer
             
-            url= 'galleryVideos/test.mp4'
+            url= {"videos/" + this.props.video}
             width='100%'
             height='100%'
             controls = {true}
@@ -123,7 +133,7 @@ class VideoViewer extends React.Component {
 
       <div className="konst-gallery-videoViewer" onClick={this.props.onClick}>
       
-            <img src={this.state.videoFilename} alt={this.props.alt}/>
+            <img src={"videos/" + this.state.videoFilename} alt={this.props.alt}/>
       </div>
 
     );  
