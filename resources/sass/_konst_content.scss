@@ -1,3 +1,4 @@
+
 .konst-content-container{
     display: flex;
     flex-direction: column;
@@ -5,4 +6,12 @@
     align-items: center;
     margin-bottom:40px;
     
+    
 }
+.konst-content{
+
+    width: 100%;
+    top:440px;
+    position: absolute; 
+    z-index: 5;
+   }

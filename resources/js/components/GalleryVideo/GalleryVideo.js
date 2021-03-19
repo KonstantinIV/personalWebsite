@@ -96,7 +96,7 @@ class Video extends React.Component {
     
     return (
 <div className="konst-gallery-video-container">
-      <div className="konst-gallery-video">
+      <div className="konst-gallery-video-video">
 
       <ReactPlayer
             

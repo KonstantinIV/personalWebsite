@@ -1,0 +1,26 @@
+
+
+
+.konst-navbar-container-tab-black{
+    background-color: #fffafa;
+    mix-blend-mode: difference !important;
+     
+ }
+.konst-navbar-container-tab-front-black{
+    //box-shadow: 6px 6px 12px #00003f;
+    color: white;
+    mix-blend-mode: difference;
+}
+
+.konst-navbar-container-tab-front-black:hover{
+    background-color: #a7a7a7;
+    color: black;
+
+}
+
+.konst-navbar-container-tab-front-black a:hover{
+    // background-color: #2626da;
+     transition: 0.3s;
+     color: black;
+
+ }

@@ -7,9 +7,11 @@ import {Route,Switch} from 'react-router-dom';
 
 import NavigationBar from './NavigationBar/NavigationBar';
 import Header from './Header/Header';
+
 import FirstContent from './Content/FirstContent';
 import SecondContent from './Content/SecondContent';
 import ThirdContent from './Content/ThirdContent';
+import FourthContent from './Content/FourthContent';
 
 
 export default class Example extends React.Component {
@@ -34,7 +36,23 @@ export default class Example extends React.Component {
 
                     {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
-                   
+                   <Switch>
+                        <Route  exact path="/" render={(props) => (
+                            <div key="2" className="konst-body-blue-wrapper">
+                                <div className="konst-body-blue-shape"></div>
+                                <div className="konst-body-blue-shape-background"></div>
+                                <img className="konst-orange-bird" src="images/birdoranges.svg" alt="bird" />
+                                <img className="konst-orange-bird konst-orange-bird-smooth" src="images/smoothbird.svg" alt="bird" />
+
+                                <NavigationBar theme="blue"/>
+                                <Header theme="blue"/>
+                                <FirstContent />
+
+                            </div>
+                        )}>
+
+                        </Route>
+                    </Switch>
                     <Switch>
                         <Route  path="/first" render={(props) => (
                             <div key="2" className="konst-body-blue-wrapper">
@@ -89,6 +107,23 @@ export default class Example extends React.Component {
 
                             </div>
                             
+                        )}>
+
+                        </Route>
+                    </Switch>
+                    <Switch>
+                        <Route  path="/fourth" render={(props) => (
+                            <div key="2" className="konst-body-black-wrapper">
+                                <div className="konst-body-black-shape"></div>
+                                <div className="konst-body-black-shape-background"></div>
+                                <img className="konst-orange-bird" src="images/birdoranges.svg" alt="bird" />
+                                <img className="konst-orange-bird konst-orange-bird-smooth" src="images/smoothbird.svg" alt="bird" />
+
+                                <NavigationBar theme="black"/>
+                                <Header theme="black"/>
+                                <FourthContent />
+
+                            </div>
                         )}>
 
                         </Route>

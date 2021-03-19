@@ -10069,12 +10069,6 @@ body {
   height: 350px;
 }
 
-.konst-content {
-  width: 100%;
-  top: 440px;
-  position: absolute;
-}
-
 .konst-content-container-post-container {
   background-color: #272781;
   width: 60%;
@@ -10246,6 +10240,61 @@ body {
   justify-content: flex-end;
 }
 
+.konst-header-black {
+  mix-blend-mode: difference !important;
+  color: #fffafa;
+}
+
+.konst-navbar-container-tab-black {
+  background-color: #fffafa;
+  mix-blend-mode: difference !important;
+}
+
+.konst-navbar-container-tab-front-black {
+  color: white;
+  mix-blend-mode: difference;
+}
+
+.konst-navbar-container-tab-front-black:hover {
+  background-color: #a7a7a7;
+  color: black;
+}
+
+.konst-navbar-container-tab-front-black a:hover {
+  transition: 0.3s;
+  color: black;
+}
+
+.konst-body-black-wrapper {
+  background-color: #0e0e0e;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+  display: flex;
+  flex-flow: column-reverse;
+  justify-content: center;
+}
+
+.konst-body-black-shape {
+  background-color: #fffafa;
+  width: 100%;
+  height: 600px;
+  -webkit-clip-path: polygon(30% 0%, 64% 50%, 30% 100%, -10% 50%);
+          clip-path: polygon(30% 0%, 64% 50%, 30% 100%, -10% 50%);
+}
+
+.konst-body-black-shape-background {
+  position: absolute;
+  background-color: #0e0e0e;
+  -webkit-clip-path: polygon(30% 0%, 100% 50%, 30% 100%, 64% 50%);
+          clip-path: polygon(30% 0%, 100% 50%, 30% 100%, 64% 50%);
+  z-index: 2;
+  mix-blend-mode: color;
+  width: 100%;
+  height: 600px;
+}
+
 .konst-navbar {
   width: 100%;
   display: flex;
@@ -10350,6 +10399,13 @@ body {
   margin-bottom: 40px;
 }
 
+.konst-content {
+  width: 100%;
+  top: 440px;
+  position: absolute;
+  z-index: 5;
+}
+
 .konst-gallery {
   padding-top: 30px;
   display: flex;
@@ -10442,7 +10498,7 @@ body {
   max-width: 270px;
 }
 
-.konst-gallery-video {
+.konst-gallery-video-video {
   margin: 8px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -10461,12 +10517,12 @@ body {
   margin: -1px;
 }
 
-.konst-gallery-video:hover {
+.konst-gallery-video-video:hover {
   border: 7px solid #42b542;
   transition: 0.3s;
 }
 
-.konst-gallery-imageViewer {
+.konst-gallery-videoViewer {
   width: 100%;
   height: 100%;
   position: fixed;
@@ -10482,7 +10538,7 @@ body {
   cursor: pointer;
 }
 
-.konst-gallery-imageViewer img {
+.konst-gallery-videoViewer video {
   max-height: 50%;
   min-height: 50%;
   background-color: #addd99;

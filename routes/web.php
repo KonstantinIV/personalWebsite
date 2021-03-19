@@ -29,6 +29,9 @@ Route::get('/videoGallery',[VideoGallery::class, 'getVideoFilenames']);
 
 //Route::get('/second',[ImageGallery::class, 'getImageFilenames']); 
 //Route::get('/third',[VideoGallery::class, 'getVideoFilenames']); 
+/*Route::get('/',function(){
+    return view('custom/welcome');
+});*/
 Route::get('/{route?}',function(){
     return view('custom/welcome');
 });

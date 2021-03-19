@@ -9,7 +9,7 @@ export default class NavigationBar extends React.Component {
  
     
     this.state = {
-      theme : this.props.theme
+      theme : this.props.theme 
     };
 
   }
@@ -47,8 +47,9 @@ export default class NavigationBar extends React.Component {
                   <div 
                   className={
                   "konst-navbar-container-tab " +
-                  this.getThemeClassName() +
-                  " konst-navbar-container-tab-mix-blend-mode"
+                  "konst-navbar-container-tab-mix-blend-mode " +
+                  this.getThemeClassName() 
+                  
                   
                   }>       
             
@@ -56,8 +57,8 @@ export default class NavigationBar extends React.Component {
                   <div 
                   className={
                     "konst-navbar-container-tab " +
-                    this.getThemeClassName() +
-                    " konst-navbar-container-tab-mix-blend-mode"
+                    "konst-navbar-container-tab-mix-blend-mode " +
+                    this.getThemeClassName() 
                     
                     }> 
                       
