@@ -10295,6 +10295,17 @@ body {
   height: 600px;
 }
 
+.konst-content-container-website-gallery {
+  padding-top: 30px;
+  display: flex;
+  flex-flow: wrap;
+  width: 85%;
+  background-color: #353535;
+  border-radius: 5px;
+  min-height: 300px;
+  justify-content: space-around;
+}
+
 .konst-navbar {
   width: 100%;
   display: flex;

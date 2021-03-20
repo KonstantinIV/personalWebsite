@@ -25,6 +25,9 @@ export default class NavigationBar extends React.Component {
     }else if(theme === "purple"){
       document.body.style.backgroundColor = "#69007f";
 
+    }else if(theme === "black"){
+      document.body.style.backgroundColor = "#0e0e0e";
+
     }
   }
   getThemeClassName(){

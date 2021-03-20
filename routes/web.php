@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ImageGallery;
 use App\Http\Controllers\VideoGallery;
+use App\Http\Controllers\WebsiteGallery;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,6 +26,7 @@ Route::get('/{route?}',function(){
 
 Route::get('/imageGallery',[ImageGallery::class, 'getImageFilenames']); 
 Route::get('/videoGallery',[VideoGallery::class, 'getVideoFilenames']); 
+Route::get('/websiteGallery',[WebsiteGallery::class, 'getWebsiteFilenames']); 
 
 
 //Route::get('/second',[ImageGallery::class, 'getImageFilenames']); 

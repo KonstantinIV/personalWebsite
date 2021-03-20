@@ -38,7 +38,7 @@ export default class Example extends React.Component {
             renders the first one that matches the current URL. */}
                    <Switch>
                         <Route  exact path="/" render={(props) => (
-                            <div key="2" className="konst-body-blue-wrapper">
+                            <div key="1" className="konst-body-blue-wrapper">
                                 <div className="konst-body-blue-shape"></div>
                                 <div className="konst-body-blue-shape-background"></div>
                                 <img className="konst-orange-bird" src="images/birdoranges.svg" alt="bird" />
@@ -113,7 +113,7 @@ export default class Example extends React.Component {
                     </Switch>
                     <Switch>
                         <Route  path="/fourth" render={(props) => (
-                            <div key="2" className="konst-body-black-wrapper">
+                            <div key="5" className="konst-body-black-wrapper">
                                 <div className="konst-body-black-shape"></div>
                                 <div className="konst-body-black-shape-background"></div>
                                 <img className="konst-orange-bird" src="images/birdoranges.svg" alt="bird" />
