@@ -19,6 +19,8 @@ export default class FirstContent extends React.Component {
     return (
 
       <div className="konst-content">
+                                        <div className="konst-body-blue-shape konst-body-blue-shape-bottom"></div>
+
         <div className="konst-content-container">
           <div className="konst-content-container-post-container">
               <img className="konst-profile-picture" src="images/profile.png"  alt="profile"/>
@@ -34,11 +36,41 @@ export default class FirstContent extends React.Component {
                 unchanged.
 
                 </div>
-
+ 
           </div>
           <div className="konst-content-container-post-container">
+                <div className="konst-service-mainheader">Services</div>
+          </div> 
+          <div className="konst-content-container-post-container konst-content-container-post-container-service">
+
+                <div className="konst-service-container">
+                  <div className="konst-service-header">
+                    Front-end
+                  </div>
+                  <div className="konst-service-skill">
+                <ul>
+                  <li>React</li>
+                  <li>JS / Jquery</li>
+                  <li>SASS</li>
+                  <li>Wordpress</li>
+                  <li>Bootstrap</li>
+
+                </ul>
+                  </div>
+                </div>
+                <div className="konst-service-container">
+                  <div className="konst-service-header">
+                    Back-end
+                  </div>
+                  <div className="konst-service-skill">
+                  <li>PHP</li>
+                  <li>Laravel</li>
+                  <li>SQL</li>
+                  </div>
+                </div>
 
           </div>
+
         </div>
       </div>
 

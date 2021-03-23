@@ -85,7 +85,7 @@ class Website extends React.Component {
 
 
     this.state = {
-      website: this.props.website
+      websiteFilename: this.props.website
     };
 
 
@@ -97,7 +97,8 @@ class Website extends React.Component {
 <div className="konst-gallery-website-container">
       <div className="konst-gallery-website-website">
 
-    
+      <img src={"websites/" + this.state.websiteFilename} alt={this.props.alt} onClick={this.props.onClick}/>
+
              </div>
       </div>
 
@@ -125,6 +126,11 @@ class WebsiteViewer extends React.Component {
       <div className="konst-gallery-websiteViewer" onClick={this.props.onClick}>
       
             <img src={"websites/" + this.state.websiteFilename} alt={this.props.alt}/>
+              <div className="konst-gallery-websiteViwer-link">
+                <a href={"http://www."+this.state.websiteFilename.split('.').slice(0, -1).join('.')+"/"}>Visit website </a>
+              
+              
+            </div>
       </div>
 
     );  

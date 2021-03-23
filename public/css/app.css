@@ -10064,6 +10064,16 @@ body {
   height: 600px;
 }
 
+.konst-body-blue-shape-bottom {
+  bottom: -300px;
+  /* transform: rotate(
+  179deg
+  ); */
+  transform: scaleX(-1);
+  z-index: -2;
+  position: absolute;
+}
+
 .konst-header-space {
   width: 100%;
   height: 350px;
@@ -10079,7 +10089,6 @@ body {
   border-radius: 5px;
   margin-top: 50px;
   padding: 20px 0px 10px 0px;
-  box-shadow: 2px 2px 10px #000000;
   display: flex;
   flex-flow: row;
   flex-wrap: wrap;
@@ -10163,6 +10172,17 @@ body {
   width: 100%;
   height: 387px;
   top: 122px;
+}
+
+.konst-body-green-shape-bottom {
+  bottom: 200px;
+  /* transform: rotate( 
+  179deg
+   ); */
+  transform: scaleX(-1);
+  z-index: -2;
+  position: absolute;
+  right: 0;
 }
 
 .konst-header-purple {
@@ -10295,7 +10315,7 @@ body {
   height: 600px;
 }
 
-.konst-content-container-website-gallery {
+.konst-gallery-website {
   padding-top: 30px;
   display: flex;
   flex-flow: wrap;
@@ -10304,6 +10324,87 @@ body {
   border-radius: 5px;
   min-height: 300px;
   justify-content: space-around;
+}
+
+.konst-gallery-website-container {
+  flex-grow: 1;
+  justify-content: center;
+  display: flex;
+  max-width: 270px;
+}
+
+.konst-gallery-website-website {
+  margin: 8px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border: 7px solid transparent;
+  border-radius: 5px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.konst-gallery-website-website img {
+  background-color: #addd99;
+  width: 200px;
+  cursor: pointer;
+  margin: -1px;
+}
+
+.konst-gallery-website-website:hover {
+  border: 7px solid #fffafa;
+  transition: 0.3s;
+}
+
+.konst-gallery-websiteViewer {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: #35353587;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 9;
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  flex-flow: column;
+}
+
+.konst-gallery-websiteViewer img {
+  max-height: 50%;
+  min-height: 50%;
+  background-color: #fffafa;
+}
+
+.konst-gallery-website-placeholder {
+  flex-grow: 1;
+  height: 3px;
+}
+
+.konst-gallery-website-placeholder div {
+  height: 1px;
+  width: 200px;
+}
+
+.konst-gallery-websiteViwer-link {
+  margin-top: 20px;
+}
+
+.konst-gallery-websiteViwer-link a {
+  font-style: nunito;
+  font-size: 18px;
+  color: #fffafa;
+  transition: 0.3s;
+}
+
+.konst-gallery-websiteViwer-link a:hover {
+  text-decoration: none;
+  color: #191818;
 }
 
 .konst-navbar {
@@ -10398,7 +10499,7 @@ body {
   width: auto;
   right: 78%;
   top: 234px;
-  z-index: 6;
+  z-index: 2;
   pointer-events: none;
 }
 
@@ -10563,6 +10664,46 @@ body {
 .konst-gallery-video-placeholder div {
   height: 1px;
   width: 200px;
+}
+
+.konst-content-container-post-container-service {
+  background-color: transparent;
+  box-shadow: none;
+  margin-top: 10px;
+}
+
+.konst-service-mainheader {
+  font-size: 34px;
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
+.konst-service-container {
+  flex-grow: 1;
+  margin: 5px;
+  flex-flow: column;
+  height: 300px;
+  background-color: #272781;
+  border-radius: 5px;
+  padding-left: 30px;
+}
+
+.konst-service-header {
+  font-size: 32px;
+  color: white;
+  margin: 20px 5px 20px 0px;
+  font-family: nunito;
+}
+
+.konst-service-skill {
+  color: white;
+  font-size: 18px;
+  font-family: nunito;
+}
+
+.konst-service-skill ul {
+  padding-left: 20px;
 }
 
 .konst-header {

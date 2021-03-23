@@ -1,4 +1,4 @@
-.konst-content-container-website-gallery{
+.konst-gallery-website{
     padding-top: 30px;
     display:flex;
     flex-flow:wrap;
@@ -7,4 +7,88 @@
 border-radius: 5px;
 min-height:300px;
 justify-content: space-around;
+}
+.konst-gallery-website-container{
+flex-grow: 1;
+    justify-content: center;
+    display: flex;
+    max-width: 270px;
+}
+.konst-gallery-website-website{
+    margin: 8px;
+    //width:100px;
+    height:fit-content;
+    border:7px solid transparent;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+
+
+
+.konst-gallery-website-website img{
+    background-color: #addd99;
+width:200px;
+cursor: pointer;
+margin: -1px;
+
+}
+.konst-gallery-website-website:hover{
+border:7px solid #fffafa;
+transition: 0.3s;
+
+
+}
+
+.konst-gallery-websiteViewer{
+width: 100%;
+height: 100%;
+position: fixed;
+
+background-color:  #35353587;
+display: flex;
+justify-content: center;
+top: 0;
+bottom: 0;
+right: 0;
+left: 0;
+z-index: 9;
+align-items: center;;
+cursor: pointer;
+display: flex;
+flex-flow: column;
+
+}
+.konst-gallery-websiteViewer img{
+max-height: 50%;
+min-height: 50%;
+background-color: #fffafa;
+
+}
+.konst-gallery-website-placeholder{
+flex-grow: 1;
+height: 3px;
+}
+.konst-gallery-website-placeholder div{
+height: 1px;
+width: 200px;
+}
+
+
+
+
+.konst-gallery-websiteViwer-link{
+    margin-top: 20px;
+}
+.konst-gallery-websiteViwer-link a{
+    font-style: nunito;
+    font-size: 18px;
+    color:#fffafa;
+    transition: 0.3s;
+
+}
+.konst-gallery-websiteViwer-link a:hover{
+    text-decoration: none;
+    color: #191818;
+    
 }

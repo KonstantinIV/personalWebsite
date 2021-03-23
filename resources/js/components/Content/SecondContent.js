@@ -19,6 +19,8 @@ export default class SecondContent extends React.Component {
     return (
 
       <div className="konst-content">
+                                                <div className="konst-body-green-shape konst-body-green-shape-bottom"></div>
+
         <div className="konst-content-container">
                 <Gallery />
          

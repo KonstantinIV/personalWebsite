@@ -65,6 +65,7 @@ export default class Example extends React.Component {
                                 <Header theme="blue"/>
                                 <FirstContent />
 
+
                             </div>
                         )}>
 
