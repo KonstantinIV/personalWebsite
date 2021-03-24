@@ -46,7 +46,7 @@ export default class NavigationBar extends React.Component {
         
      <div className="konst-navbar">
                 
-              <div className="konst-navbar-container"> 
+              <div className="konst-navbar-container d-sm-flex"> 
                   <div 
                   className={
                   "konst-navbar-container-tab " +

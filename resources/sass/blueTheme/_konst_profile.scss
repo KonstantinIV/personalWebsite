@@ -35,17 +35,19 @@
  border-radius: 50%;
  max-width: 150px;
  min-width: 50px;
-
+ margin: 20PX;
 
 }
 .konst-profile-text{
     height: 100px;
     color: #e0ffff;
-    margin-left: 20px;
-    margin-right: 20px;   
+   //@at-root margin-left: 20px;
+   // margin-right: 20px;   
     height: fit-content;
     min-width: 220px;
-    padding-top: 10px;
+   // padding-top: 10px;
     max-width: 430px;
-    width: 70%;
+    width: 80%;
+    margin: 20px;
+    margin-top: 30px;
    }

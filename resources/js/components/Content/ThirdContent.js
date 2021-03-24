@@ -19,6 +19,8 @@ export default class ThirdContent extends React.Component {
     return (
 
       <div className="konst-content">
+                                                        <div className="konst-body-purple-shape konst-body-purple-shape-bottom"></div>
+
         <div className="konst-content-container">
           
         <GalleryVideo />
